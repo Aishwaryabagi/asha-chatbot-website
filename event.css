@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 10px;
+  }
+  
+  .section-title p {
+    font-size: 1.1rem;
+    color: #718096;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .event-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-image {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .event-date {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 0.85rem;
+  }
+  
+  .event-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .category-conference {
+    background-color: rgba(49, 130, 206, 0.9);
+    color: white;
+  }
+  
+  .category-workshop {
+    background-color: rgba(128, 90, 213, 0.9);
+    color: white;
+  }
+  
+  .category-festival {
+    background-color: rgba(56, 161, 105, 0.9);
+    color: white;
+  }
+  
+  .category-exhibition {
+    background-color: rgba(229, 62, 62, 0.9);
+    color: white;
+  }
+  
+  .event-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a202c;
+  }
+  
+  .event-location {
+    display: flex;
+    align-items: center;
+    color: #718096;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .event-location svg {
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+  
+  .event-description {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #4a5568;
+    flex-grow: 1;
+  }
+  
+  .event-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #edf2f7;
+    padding-top: 15px;
+    margin-top: auto;
+  }
+  
+  .event-time {
+    display: flex;
+    align-items: center;
+    color: #718096;
+    font-size: 0.9rem;
+  }
+  
+  .event-time svg {
+    margin-right: 5px;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-btn:hover {
+    background-color: #3182ce;
+  }
+  
+  @media (max-width: 1200px) {
+    .events-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .events-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,126 @@
+.hackathons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .hackathon-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .hackathon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hackathon-image {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hackathon-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hackathon-date {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(66, 153, 225, 0.95);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hackathon-prize {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(246, 173, 85, 0.95);
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #744210;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hackathon-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hackathon-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #1a202c;
+  }
+  
+  .hackathon-location {
+    display: flex;
+    align-items: center;
+    color: #4a5568;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .hackathon-location svg {
+    margin-right: 8px;
+    flex-shrink: 0;
+    color: #4299e1;
+  }
+  
+  .hackathon-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #4a5568;
+    flex-grow: 1;
+    line-height: 1.7;
+  }
+  
+  .hackathon-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .highlight-tag {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .hackathon-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #edf2f7;
+    padding-top: 20px;
+    margin-top: auto;
+  }
+  
+  .hackathon-stats {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
